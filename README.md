@@ -1,1 +1,3 @@
-# habitcrack
+### habitcrack
+
+web app eecs project
