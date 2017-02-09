@@ -1,0 +1,36 @@
+body {
+  background-color: #caebf2;
+}
+
+h1 {
+  padding: 50px;
+  background-color: #c98474;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  
+  color:  #f2d388;
+  font-size: 4em;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#search {
+  margin: 60px;
+  font-size: 1.2em;
+  display: inline;
+}
+
+#search-button {
+  display: inline;
+}
+
+
+.scrollbar {
+  margin: 60px;
+  width: 1000px;
+}
+
+option {
+  font-size: 1.5em;
+  margin: 5px;
+}
