@@ -31,8 +31,9 @@ a {
   display: block;
 }
 
-#goaltime {
-  font-size: .9em;
+#searchbox {
+  width: 92%;
+  margin-bottom: -60px;
 }
 
 #slider {
