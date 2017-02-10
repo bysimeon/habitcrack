@@ -1,0 +1,40 @@
+html {
+  font-family: "Roboto";
+  background-color: pink;
+}
+
+a {
+  color: black;
+}
+
+#sidebar {
+  border-right: black solid 1px;
+}
+
+#label {
+  /*margin-top: 60px;*/
+  background-color: white;
+  border: 1px solid black;
+  height: auto;
+  padding: 15px 15px 15px 15px;
+  font-size: 2em;
+  text-align: center;
+}
+
+#list {
+  height: 25em;
+  width: auto;
+  overflow: auto;
+}
+
+#item {
+  display: block;
+}
+
+#goaltime {
+  font-size: .9em;
+}
+
+#slider {
+  width: 40%;
+}
