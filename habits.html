@@ -98,17 +98,35 @@
           <div  class="mdl-cell mdl-cell--8-col mdl-cell--6-col-phone"id="label">
             <h4 id=habname> Habit Name </h4>
             <p>
-              Studies show it takes 21 days to break a bad habit. Start there, of work up to it! <br>
+              Studies show it takes 21 days to break a bad habit. Start there, or work up to it! <br>
               <b> Goal number of days: <b>
-                <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="21" tabindex="0">
+                <div id="numDays">21</div>
+              <input class="mdl-slider mdl-js-slider" type="range" min="0" max="30" value="21" tabindex="0" step="1" id="goalSlider">
             </p>
-            <p>You are more likely to break a bad habit if you replace it with a good one!</p>
-            <form action="#">
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" type="text" id="althab">
-                <label class="mdl-textfield__label" for="althab">Alternative Good Habit</label>
-              </div>
-            </form>
+            <p>You are more likely to break a bad habit if you replace it with a good one!
+              <form action="#">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="althab">
+                  <label class="mdl-textfield__label" for="althab">Alternative Good Habit</label>
+                </div>
+              </form>
+            </p>
+            <div id="reminder">
+              <p><b>Reminder:</b></p>
+              <form action="#">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="message">
+                  <label class="mdl-textfield__label" for="message">set message</label>
+                </div>
+              </form>
+
+              <p> How often would you like a reminder? </p>
+              <input class="mdl-slider mdl-js-slider" type="range" min="0" max="24" value="0" tabindex="0" step="1" id="timeIntSlider">
+              <p> When do you want reminders? </p>
+              <input class="mdl-slider mdl-js-slider" type="range" min="0" max="24" value="12" tabindex="0" step="1" id="partDaySlider">
+            </div>
+
+
           </div>
         <div hidden class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone"id="label">
         </div>

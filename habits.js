@@ -1,3 +1,5 @@
+function runCode() {
+
 function myFunction() {
     // Declare variables
     var input, filter, ul, li, a, i;
@@ -16,3 +18,13 @@ function myFunction() {
         }
     }
 }
+
+var numDaysDisplay = document.getElementById("numDays");
+
+goalSlider.addEventListener("change", function() {
+  numDaysDisplay.innerHTML = document.getElementById("goalSlider").value;
+});
+
+}
+
+window.onload = runCode();

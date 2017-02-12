@@ -38,4 +38,9 @@ a {
 
 #slider {
   width: 40%;
+  display:inline;
+}
+
+#numDays {
+  display: inline;
 }
