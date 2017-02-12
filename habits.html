@@ -29,15 +29,10 @@
             <form action="#">
               <div id="searchbox" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <input class="mdl-textfield__input" onkeyup="myFunction()" type="text" id="sample3">
-                <label class="mdl-textfield__label" for="sample3">Search Habits</label>
+                <label class="mdl-textfield__label" for="sample3">search habits</label>
               </div>
             </form>
             <ul id="list"class="demo-list-item mdl-list">
-              <li class="mdl-list__item" id="item">
-                <span class="mdl-list__item-primary-content">
-                  Add Custom Habit
-                </span>
-              </li>
               <li class="mdl-list__item" id="item">
                 <span class="mdl-list__item-primary-content">
                   Alcohol
@@ -101,7 +96,19 @@
             </ul>
           </div>
           <div  class="mdl-cell mdl-cell--8-col mdl-cell--6-col-phone"id="label">
-            <h4 id=habname> Habit Name </h3>
+            <h4 id=habname> Habit Name </h4>
+            <p>
+              Studies show it takes 21 days to break a bad habit. Start there, of work up to it! <br>
+              <b> Goal number of days: <b>
+                <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="21" tabindex="0">
+            </p>
+            <p>You are more likely to break a bad habit if you replace it with a good one!</p>
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="althab">
+                <label class="mdl-textfield__label" for="althab">Alternative Good Habit</label>
+              </div>
+            </form>
           </div>
         <div hidden class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone"id="label">
         </div>
