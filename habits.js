@@ -1,4 +1,4 @@
-function runCode() {
+
 
 function myFunction() {
     // Declare variables
@@ -19,12 +19,6 @@ function myFunction() {
     }
 }
 
-var numDaysDisplay = document.getElementById("numDays");
-
-goalSlider.addEventListener("change", function() {
-  numDaysDisplay.innerHTML = document.getElementById("goalSlider").value;
-});
-
+function showMessage (value) {
+  document.getElementById("numDays").innerHTML = value;
 }
-
-window.onload = runCode();

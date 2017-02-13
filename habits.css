@@ -38,9 +38,13 @@ a {
 
 #slider {
   width: 40%;
-  display:inline;
+}
+
+#goalLabel {
+  display: inline;
 }
 
 #numDays {
-  display: inline;
+  display:inline;
+  font-size: .6em;
 }

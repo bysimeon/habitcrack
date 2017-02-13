@@ -99,9 +99,11 @@
             <h4 id=habname> Habit Name </h4>
             <p>
               Studies show it takes 21 days to break a bad habit. Start there, or work up to it! <br>
-              <b> Goal number of days: <b>
-                <div id="numDays">21</div>
-              <input class="mdl-slider mdl-js-slider" type="range" min="0" max="30" value="21" tabindex="0" step="1" id="goalSlider">
+              <p id="goalLabel">
+                <b> Goal number of days: <div id="numDays">21</div>
+              </p>
+              <input class="mdl-slider mdl-js-slider" type="range" min="0" max="30" value="21" tabindex="0" step="1" id="goalSlider"
+              oninput="showMessage(this.value)" onchange="showMessage(this.value)">
             </p>
             <p>You are more likely to break a bad habit if you replace it with a good one!
               <form action="#">
