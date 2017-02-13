@@ -19,6 +19,11 @@ function myFunction() {
     }
 }
 
-function showMessage (value) {
+function showDaysMessage (value) {
   document.getElementById("numDays").innerHTML = value;
+}
+
+  function showHoursMessage (value) {
+    document.getElementById("numHours").innerHTML = value;
+
 }

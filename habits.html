@@ -103,9 +103,10 @@
                 <b> Goal number of days: <div id="numDays">21</div>
               </p>
               <input class="mdl-slider mdl-js-slider" type="range" min="0" max="30" value="21" tabindex="0" step="1" id="goalSlider"
-              oninput="showMessage(this.value)" onchange="showMessage(this.value)">
+              oninput="showDaysMessage(this.value)" onchange="showDaysMessage(this.value)">
             </p>
-            <p>You are more likely to break a bad habit if you replace it with a good one!
+            <p>Enter a new habit to replace your bad one. <br>
+              You are more likely to break a bad habit if you replace it with a good one!
               <form action="#">
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                   <input class="mdl-textfield__input" type="text" id="althab">
@@ -122,8 +123,14 @@
                 </div>
               </form>
 
-              <p> How often would you like a reminder? </p>
-              <input class="mdl-slider mdl-js-slider" type="range" min="0" max="24" value="0" tabindex="0" step="1" id="timeIntSlider">
+              <p>
+                How often would you like a reminder?
+                <p id = "timeIntLabel">
+                  <b>Every <div id="numHours">0</div> hours</b>
+                </p>
+                  <input class="mdl-slider mdl-js-slider" type="range" min="0" max="24" value="0" tabindex="0" step="1" id="timeIntSlider"
+                  oninput="showHoursMessage(this.value)" onchange="showHoursMessage(this.value)">
+              </p>
               <p> When do you want reminders? </p>
               <input class="mdl-slider mdl-js-slider" type="range" min="0" max="24" value="12" tabindex="0" step="1" id="partDaySlider">
             </div>
