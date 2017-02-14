@@ -15,8 +15,7 @@ a {
   margin-bottom: 50px;
 }
 
-#label {
-  /*margin-top: 60px;*/
+.box {
   background-color: white;
   border: 1px solid black;
   height: auto;

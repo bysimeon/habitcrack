@@ -7,7 +7,7 @@ a {
   color: black;
 }
 
-#label {
+.box {
   background-color: white;
   border: 1px solid black;
   height: 10em;
@@ -18,7 +18,8 @@ a {
 
 .p1 {
   position: relative;
-  top: 80%;
+  top: 85%;
+  width: auto;
   margin: auto;
 }
 

@@ -25,10 +25,10 @@
     <main class="mdl-layout__content">
       <div class="page-content">
         <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-phone"id="label">
+          <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-phone box">
             <form action="#">
               <div id="searchbox" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" onkeyup="myFunction()" type="text" id="sample3">
+                <input class="mdl-textfield__input" onkeyup="myFunction()" type="text" id="searchtext">
                 <label class="mdl-textfield__label" for="sample3">search habits</label>
               </div>
             </form>
@@ -95,51 +95,54 @@
               </li>
             </ul>
           </div>
-          <div  class="mdl-cell mdl-cell--8-col mdl-cell--6-col-phone"id="label">
+          <div  class="mdl-cell mdl-cell--8-col mdl-cell--6-col-phone box"id="habitbox">
             <h4 id=habname> Habit Name </h4>
             <p>
               Studies show it takes 21 days to break a bad habit. Start there, or work up to it! <br>
-              <p id="goalLabel">
-                <b> How many days would you like pursue this goal for? <div id="numDays">21</div>
+            </p>
+            <p id="goalLabel">
+              <b> Goal number of days: <p id="numDays">21</p>
               </p>
-              <input class="mdl-slider mdl-js-slider" type="range" min="0" max="30" value="21" tabindex="0" step="1" id="goalSlider"
-              oninput="showDaysMessage(this.value)" onchange="showDaysMessage(this.value)">
-            </p>
-            <p>Enter a new habit to replace your bad one. <br>
-              You are more likely to break a bad habit if you replace it with a good one!
-              <form action="#">
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                  <input class="mdl-textfield__input" type="text" id="althab">
-                  <label class="mdl-textfield__label" for="althab">Alternative Good Habit</label>
-                </div>
-              </form>
-            </p>
-            <div id="reminder">
-              <p><b>Reminder:</b></p>
-              <form action="#">
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                  <input class="mdl-textfield__input" type="text" id="message">
-                  <label class="mdl-textfield__label" for="message">set message</label>
-                </div>
-              </form>
-
-              <p>
-                How often would you like a reminder?
-                <p id = "timeIntLabel">
-                  <b>Every <div id="numHours">0</div> hours</b>
-                </p>
+              <p id=settingslider>
+                <input class="mdl-slider mdl-js-slider" type="range" min="0" max="30" value="21" tabindex="0" step="1" id="goalSlider"
+                oninput="showDaysMessage(this.value)" onchange="showDaysMessage(this.value)">
+              </p>
+              <p>Enter a new habit to replace your bad one. <br>
+                You are more likely to break a bad habit if you replace it with a good one!
+                <form action="#">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="althab">
+                    <label class="mdl-textfield__label" for="althab">Alternative Good Habit</label>
+                  </div>
+                </form>
+              </p>
+              <div id="reminder">
+                <!-- <p><b>Reminder:</b></p> -->
+                <form action="#">
+                  <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="text" id="sample1">
+                    <label class="mdl-textfield__label" for="sample1">reminder message</label>
+                  </div>
+                </form>
+                <p>
+                  How often would you like a reminder?
+                  <!-- <p id = "timeIntLabel"> Every <p id="numHours">0</p> hours </p> -->
                   <input class="mdl-slider mdl-js-slider" type="range" min="0" max="24" value="0" tabindex="0" step="1" id="timeIntSlider"
                   oninput="showHoursMessage(this.value)" onchange="showHoursMessage(this.value)">
-              </p>
-              <p> When do you want reminders? </p>
-              <input class="mdl-slider mdl-js-slider" type="range" min="0" max="24" value="12" tabindex="0" step="1" id="partDaySlider">
+                </p>
+                <p> When do you want reminders? </p>
+                <input class="mdl-slider mdl-js-slider" type="range" min="0" max="24" value="12" tabindex="0" step="1" id="partDaySlider">
+              </div>
+              <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="submit">
+                Submit
+              </button>
+              <button hidden="mdl-button mdl-js-button" id="submit" disabled>
+                Submit
+              </button>
             </div>
-
-
+            <div hidden class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box">
+            </div>
           </div>
-        <div hidden class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone"id="label">
-        </div>
+        </main>
       </div>
-    </main>
-  </div>
-</body>
+    </body>

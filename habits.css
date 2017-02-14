@@ -11,18 +11,17 @@ a {
   border-right: black solid 1px;
 }
 
-#label {
-  /*margin-top: 60px;*/
+.box {
   background-color: white;
   border: 1px solid black;
   height: auto;
   padding: 15px 15px 15px 15px;
   font-size: 2em;
-  text-align: left;
 }
 
 #list {
-  height: 25em;
+  height: auto;
+  max-height: 40em;
   width: auto;
   overflow: auto;
 }
@@ -32,8 +31,9 @@ a {
 }
 
 #searchbox {
-  width: 86.5%;
+  left: 16px;
   margin-bottom: -60px;
+  width: 95%;
 }
 
 #slider {
@@ -44,6 +44,10 @@ a {
   display: inline;
 }
 
+#settingslider {
+  width: 100%;
+}
+
 #numDays {
   display:inline;
   font-size: .6em;
@@ -52,9 +56,16 @@ a {
 #timeIntLabel {
   display:inline;
   font-size: .5em;
+  font-weight: bold;
 }
 
 #numHours {
   display: inline;
   font-size: .6em;
+}
+
+#submit {
+  margin-top: 15px;
+  position: relative;
+  left: 41.5%;
 }
