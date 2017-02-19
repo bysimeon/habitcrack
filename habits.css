@@ -30,6 +30,16 @@ a {
   display: block;
 }
 
+#tt4 {
+  position: relative;
+  top: 5px;
+  font-size: 1.3em;
+}
+
+#item:hover {
+  font-weight: bold;
+}
+
 #searchbox {
   left: 16px;
   margin-bottom: -60px;
@@ -42,6 +52,7 @@ a {
 
 #goalLabel {
   display: inline;
+  font-size: .6em;
 }
 
 #settingslider {
@@ -50,7 +61,6 @@ a {
 
 #numDays {
   display:inline;
-  font-size: .6em;
 }
 
 #timeIntLabel {
@@ -62,6 +72,12 @@ a {
 #numHours {
   display: inline;
   font-size: .6em;
+}
+
+#info {
+  /*color: #b0b0b0;*/
+  font-weight: lighter;
+  font-size: .5em;
 }
 
 #submit {

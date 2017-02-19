@@ -24,8 +24,8 @@
     <main class="mdl-layout__content">
       <div class="page-content">
         <div class="mdl-grid">
-          <div hidden class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box">
-            <a>Cracking Knuckles</a>
+          <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box">
+            <a id="Habit1">///</a>
             <div id="p1" class="mdl-progress mdl-js-progress p1"></div>
               <script>
                 document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
@@ -67,4 +67,7 @@
       </div>
     </main>
   </div>
+  <script>
+  document.getElementById("Habit1").innerHTML = localStorage.getItem("habit");
+</script>
 </body>

@@ -1,26 +1,10 @@
-
-
-function myFunction() {
-    // Declare variables
-    var input, filter, ul, li, a, i;
-    input = document.getElementById('sample3');
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("list");
-    li = ul.getElementsByTagName('item');
-
-    // Loop through all list items, and hide those who don't match the search query
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
+function selectHabit (value) {
+  document.getElementById("habname").innerHTML = value;
+  localStorage.setItem("habit", value);
 }
 
 function showDaysMessage (value) {
-  document.getElementById("numDays").innerHTML = value;
+  document.getElementById("numDays").innerHTML = value + ' Days';
 }
 
   function showHoursMessage (value) {
