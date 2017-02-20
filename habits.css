@@ -38,6 +38,8 @@ a {
 
 #item:hover {
   font-weight: bold;
+  cursor: pointer; 
+  cursor: hand;
 }
 
 #searchbox {
