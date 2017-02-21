@@ -7,6 +7,13 @@ a {
   color: black;
 }
 
+
+#sdicons {
+  text-align: right;
+  position: relative;
+  top: -140px;
+}
+
 .box {
   background-color: white;
   border: 1px solid black;

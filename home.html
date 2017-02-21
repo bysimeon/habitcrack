@@ -17,48 +17,71 @@
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="home.html">Home</a>
         <a class="mdl-navigation__link" href="account.html">Account</a>
-        <a class="mdl-navigation__link" href="habits.html">Habits</a>
         <a class="mdl-navigation__link" href="login.html">Logout</a>
       </nav>
     </div>
     <main class="mdl-layout__content">
       <div class="page-content">
         <div class="mdl-grid">
+          <div hidden class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box" style="cursor:pointer" style="cursor:hand" id="add_habit" onclick="location.href = 'habits.html';">
+            Add Habit
+            <div id="p2" class="mdl-progress mdl-js-progress p1"></div>
+            <script>
+            document.querySelector('#p2').addEventListener('mdl-componentupgraded', function() {
+              this.MaterialProgress.setProgress(0);
+            });
+            </script>
+          </div>
           <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box">
             <a id="Habit1">///</a>
             <div id="p1" class="mdl-progress mdl-js-progress p1"></div>
-              <script>
-                document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
-                  this.MaterialProgress.setProgress(0);
-                });
-              </script>
-          </div>
-          <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box" style="cursor:pointer" style="cursor:hand" id="add_habit" onclick="location.href = 'habits.html';">
-            Add Habit
-            <div id="p2" class="mdl-progress mdl-js-progress p1"></div>
-              <script>
-                document.querySelector('#p2').addEventListener('mdl-componentupgraded', function() {
-                  this.MaterialProgress.setProgress(0);
-                });
-              </script>
+            <div id="sdicons">
+              <button class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">settings</i>
+              </button>
+              <button class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">delete</i>
+              </button>
+            </div>
+            <script>
+            document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
+              this.MaterialProgress.setProgress(0);
+            });
+            </script>
           </div>
           <div hidden class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box">
             Add Habit
             <div id="p3" class="mdl-progress mdl-js-progress p1"></div>
-              <script>
-                document.querySelector('#p3').addEventListener('mdl-componentupgraded', function() {
-                  this.MaterialProgress.setProgress(0);
-                });
-              </script>
+            <div id="sdicons">
+              <button class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">settings</i>
+              </button>
+              <button class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">delete</i>
+              </button>
+            </div>
+            <script>
+            document.querySelector('#p3').addEventListener('mdl-componentupgraded', function() {
+              this.MaterialProgress.setProgress(0);
+            });
+            </script>
           </div>
           <div hidden class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box">
             Add Habit
             <div id="p4" class="mdl-progress mdl-js-progress p1"></div>
-              <script>
-                document.querySelector('#p4').addEventListener('mdl-componentupgraded', function() {
-                  this.MaterialProgress.setProgress(0);
-                });
-              </script>
+            <div id="sdicons">
+              <button class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">settings</i>
+              </button>
+              <button class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">delete</i>
+              </button>
+            </div>
+            <script>
+            document.querySelector('#p4').addEventListener('mdl-componentupgraded', function() {
+              this.MaterialProgress.setProgress(0);
+            });
+            </script>
           </div>
         </div>
         <button id="fab" onclick="location.href = 'habits.html';" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
@@ -69,5 +92,5 @@
   </div>
   <script>
   document.getElementById("Habit1").innerHTML = localStorage.getItem("habit");
-</script>
+  </script>
 </body>
