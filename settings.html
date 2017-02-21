@@ -4,8 +4,8 @@
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-  <link rel="stylesheet" type = "text/css" href = "habits.css">
-  <script type="text/javascript" src="habits.js"></script>
+  <link rel="stylesheet" type = "text/css" href = "settings.css">
+  <script type="text/javascript" src="settings.js"></script>
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>habitcrack</title>
@@ -24,76 +24,8 @@
     <main class="mdl-layout__content">
       <div class="page-content">
         <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-phone box">
-            <form action="#">
-              <div id="searchbox" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" onkeyup="myFunction()" type="text" id="searchtext">
-                <label class="mdl-textfield__label" for="sample3">search habits</label>
-              </div>
-            </form>
-            <ul id="list"class="demo-list-item mdl-list">
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Alcohol')">
-                <span class="mdl-list__item-primary-content">
-                  Alcohol
-                </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Coffee')">
-                <span class="mdl-list__item-primary-content">
-                  Coffee
-                </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Cracking Knuckles')">
-                <span class="mdl-list__item-primary-content">
-                  Cracking Knuckles
-                </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Drinking Soda')">
-                <span class="mdl-list__item-primary-content">
-                  Drinking Soda
-                </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Lying')">
-                <span class="mdl-list__item-primary-content">
-                  Lying
-                </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Overeating')">
-                <span class="mdl-list__item-primary-content">
-                  Overeating
-                </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Procrastinating')">
-                <span class="mdl-list__item-primary-content">
-                  Procrastinating
-                </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Shopping')">
-                <span class="mdl-list__item-primary-content">
-                  Shopping
-                </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Skipping Breakfast')">
-                <span class="mdl-list__item-primary-content">
-                  Skipping Breakfast
-                </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Smoking')">
-                <span class="mdl-list__item-primary-content">
-                  Smoking
-                </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Swearing')">
-                <span class="mdl-list__item-primary-content">
-                  Swearing
-                </span>
-              </li>
-            </ul>
-          </div>
           <div  class="mdl-cell mdl-cell--8-col mdl-cell--6-col-phone box"id="habitbox">
-            <h4 id=habname> Bad Habit </h4>
-            <!-- <p id="info">
-              Studies show it takes 21 days to break a bad habit. Start there, or work up to it! <br>
-            </p> -->
+            <h4 id=habname> /// </h4>
             <div id="goalLabel">
               <b> Timeframe: </b>
               <div id="tt4" class="icon material-icons">info</div>
@@ -103,7 +35,7 @@
               <p id="numDays">21 Days</p>
             </div>
             <p id=settingslider>
-              <input class="mdl-slider mdl-js-slider" type="range" min="0" max="31" value="21" tabindex="0" step="1" id="goalSlider"
+              <input class="mdl-slider mdl-js-slider" type="range" min="0" max="30" value="21" tabindex="0" step="1" id="goalSlider"
               oninput="showDaysMessage(this.value)" onchange="showDaysMessage(this.value)">
               </p>
               <p id="info">
@@ -146,4 +78,7 @@
           </div>
         </main>
       </div>
+      <script>
+      document.getElementById("habname").innerHTML = localStorage.getItem("habit");
+      </script>
     </body>
