@@ -35,7 +35,7 @@ a {
 }
 
 #fab {
-  position: absolute;
+  position: fixed;
   width: 8em;
   height: 2.3em;
   margin-left: -1em;
