@@ -1,226 +1,223 @@
 <!doctype html>
 
 <head>
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-  <link rel="stylesheet" type = "text/css" href = "habits.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="habits.js"></script>
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <title>habitcrack</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" type="text/css" href="habits.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="habits.js"></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>habitcrack</title>
 </head>
 
 <body>
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
-    <div class="mdl-layout__drawer" id="sidebar">
-      <span class="mdl-layout-title">Hey, Student!</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="home.html">Home</a>
-        <a class="mdl-navigation__link" href="account.html">Account</a>
-        <a class="mdl-navigation__link" href="login.html">Logout</a>
-      </nav>
-    </div>
-    <main class="mdl-layout__content">
-      <div class="page-content">
-        <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-phone box">
-            <form action="#">
-              <div id="searchbox" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" onkeyup="myFunction()" type="text" id="searchtext">
-                <label class="mdl-textfield__label" for="sample3">search habits</label>
-              </div>
-            </form>
-            <ul id="list"class="demo-list-item mdl-list">
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Alcohol')">
-                <span class="mdl-list__item-primary-content">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+        <div class="mdl-layout__drawer" id="sidebar">
+            <span class="mdl-layout-title">Hey, Student!</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="home.html">Home</a>
+                <a class="mdl-navigation__link" href="account.html">Account</a>
+                <a class="mdl-navigation__link" href="login.html">Logout</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-phone box">
+                        <form action="#">
+                            <div id="searchbox" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" onkeyup="myFunction()" type="text" id="searchtext">
+                                <label class="mdl-textfield__label" for="sample3">search habits</label>
+                            </div>
+                        </form>
+                        <ul id="list" class="demo-list-item mdl-list">
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Alcohol')">
+                                <span class="mdl-list__item-primary-content">
                   Alcohol
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Chewing on Pens')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Chewing on Pens')">
+                                <span class="mdl-list__item-primary-content">
                   Chewing on Pens
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Chewing with Your Mouth Open')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Chewing with Your Mouth Open')">
+                                <span class="mdl-list__item-primary-content">
                   Chewing With Your Mouth Open
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Coffee')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Coffee')">
+                                <span class="mdl-list__item-primary-content">
                   Coffee
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Cracking Knuckles')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Cracking Knuckles')">
+                                <span class="mdl-list__item-primary-content">
                   Cracking Knuckles
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Drinking Energy Drinks')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Drinking Energy Drinks')">
+                                <span class="mdl-list__item-primary-content">
                   Drinking Energy Drinks
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Drinking Soda')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Drinking Soda')">
+                                <span class="mdl-list__item-primary-content">
                   Drinking Soda
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Emotional Eating')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Emotional Eating')">
+                                <span class="mdl-list__item-primary-content">
                   Emotional Eating
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Falling Asleep in Class')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Falling Asleep in Class')">
+                                <span class="mdl-list__item-primary-content">
                   Falling Asleep in Class
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Forgetting Keys')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Forgetting Keys')">
+                                <span class="mdl-list__item-primary-content">
                   Forgetting Keys
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Forgetting Phone')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Forgetting Phone')">
+                                <span class="mdl-list__item-primary-content">
                   Forgetting Phone
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Forgetting Wallet')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Forgetting Wallet')">
+                                <span class="mdl-list__item-primary-content">
                   Forgetting Wallet
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Gambling')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Gambling')">
+                                <span class="mdl-list__item-primary-content">
                   Gambling
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Hair Chewing')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Hair Chewing')">
+                                <span class="mdl-list__item-primary-content">
                   Hair Chewing
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Littering')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Littering')">
+                                <span class="mdl-list__item-primary-content">
                   Littering
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Lying')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Lying')">
+                                <span class="mdl-list__item-primary-content">
                   Lying
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Overeating')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Overeating')">
+                                <span class="mdl-list__item-primary-content">
                   Overeating
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Popping Zits')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Popping Zits')">
+                                <span class="mdl-list__item-primary-content">
                   Popping Zits
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Procrastinating')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Procrastinating')">
+                                <span class="mdl-list__item-primary-content">
                   Procrastinating
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Shopping')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Shopping')">
+                                <span class="mdl-list__item-primary-content">
                   Shopping
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Skin Picking')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Skin Picking')">
+                                <span class="mdl-list__item-primary-content">
                   Skin Picking
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Skipping Breakfast')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Skipping Breakfast')">
+                                <span class="mdl-list__item-primary-content">
                   Skipping Breakfast
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Sleeping with Makeup On')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Sleeping with Makeup On')">
+                                <span class="mdl-list__item-primary-content">
                   Sleeping with Makeup On
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Smoking')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Smoking')">
+                                <span class="mdl-list__item-primary-content">
                   Smoking
                 </span>
-              </li>
-              <li class="mdl-list__item" id="item" onclick="selectHabit('Swearing')">
-                <span class="mdl-list__item-primary-content">
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Swearing')">
+                                <span class="mdl-list__item-primary-content">
                   Swearing
                 </span>
-              </li>
-            </li>
-            <li class="mdl-list__item" id="item" onclick="selectHabit('Using Maiden Name')">
-              <span class="mdl-list__item-primary-content">
+                            </li>
+                            </li>
+                            <li class="mdl-list__item" id="item" onclick="selectHabit('Using Maiden Name')">
+                                <span class="mdl-list__item-primary-content">
                 Using Maiden Name
               </span>
-            </li>
-            </ul>
-          </div>
-          <div  class="mdl-cell mdl-cell--8-col mdl-cell--6-col-phone box"id="habitbox">
-            <h4 id=habname> Bad Habit </h4>
-            <!-- <p id="info">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-phone box" id="habitbox">
+                        <h4 id=habname> Bad Habit </h4>
+                        <!-- <p id="info">
               Studies show it takes 21 days to break a bad habit. Start there, or work up to it! <br>
             </p> -->
-            <div id="goalLabel">
-              <b> Timeframe: </b>
-              <div id="tt4" class="icon material-icons">info</div>
-              <div class="mdl-tooltip mdl-tooltip--right" for="tt4">
-                Studies show it takes <br> 21 days to break a bad habit. <br>Start there, or work up to it!
-              </div>
-              <p id="numDays">21 Days</p>
-            </div>
-            <p id=settingslider>
-              <input class="mdl-slider mdl-js-slider" type="range" min="0" max="31" value="21" tabindex="0" step="1" id="goalSlider"
-              oninput="showDaysMessage(this.value)" onchange="showDaysMessage(this.value)">
-              </p>
-              <p id="info">
-                Enter a new habit to replace your bad one. <br>
-                You are more likely to break a bad habit if you replace it with a good one!
-              </p>
-                <form action="#">
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="althab">
-                    <label class="mdl-textfield__label" for="althab">Alternative good habit</label>
-                  </div>
-                </form>
-              </p>
-              <div id="reminder">
-                <p><b>Reminder:</b></p>
-                <form action="#">
-                  <div class="mdl-textfield mdl-js-textfield">
-                    <input class="mdl-textfield__input" type="text" id="sample1"  id="remessage" onchange="message1()">
-                    <label class="mdl-textfield__label" for="sample1">Reminder message</label>
-                  </div>
-                </form>
-                <p>
-                  How often would you like a reminder?
-                  <!-- <p id = "timeIntLabel"> Every <p id="numHours">0</p> hours </p> -->
-                  <input class="mdl-slider mdl-js-slider" type="range" min="0" max="24" value="0" tabindex="0" step="1" id="timeIntSlider"
-                  oninput="showHoursMessage(this.value)" onchange="showHoursMessage(this.value)">
-                </p>
-                <p> When do you want reminders? </p>
-                <input class="mdl-slider mdl-js-slider" type="range" min="0" max="24" value="12" tabindex="0" step="1" id="partDaySlider">
-              </div>
-              <button onclick="submit()" class="mdl-button mdl-js-button mdl-js-ripple-effect" id="submit">
+                        <div id="goalLabel">
+                            <b> Timeframe: </b>
+                            <div id="tt4" class="icon material-icons">info</div>
+                            <div class="mdl-tooltip mdl-tooltip--right" for="tt4">
+                                Studies show it takes <br> 21 days to break a bad habit. <br>Start there, or work up to it!
+                            </div>
+                            <p id="numDays">21 Days</p>
+                        </div>
+                        <p id=settingslider>
+                            <input class="mdl-slider mdl-js-slider" type="range" min="0" max="31" value="21" tabindex="0" step="1" id="goalSlider" oninput="showDaysMessage(this.value)" onchange="showDaysMessage(this.value)">
+                        </p>
+                        <p id="info">
+                            Enter a new habit to replace your bad one. <br> You are more likely to break a bad habit if you replace it with a good one!
+                        </p>
+                        <form action="#">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="althab">
+                                <label class="mdl-textfield__label" for="althab">Alternative good habit</label>
+                            </div>
+                        </form>
+                        </p>
+                        <div id="reminder">
+                            <p><b>Reminder:</b></p>
+                            <form action="#">
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <input class="mdl-textfield__input" type="text" id="sample1" id="remessage" onchange="message1()">
+                                    <label class="mdl-textfield__label" for="sample1">Reminder message</label>
+                                </div>
+                            </form>
+                            <p>
+                                How often would you like a reminder?
+                                <!-- <p id = "timeIntLabel"> Every <p id="numHours">0</p> hours </p> -->
+                                <input class="mdl-slider mdl-js-slider" type="range" min="0" max="24" value="0" tabindex="0" step="1" id="timeIntSlider" oninput="showHoursMessage(this.value)" onchange="showHoursMessage(this.value)">
+                            </p>
+                            <p> When do you want reminders? </p>
+                            <input class="mdl-slider mdl-js-slider" type="range" min="0" max="24" value="12" tabindex="0" step="1" id="partDaySlider">
+                        </div>
+                        <button onclick="submit()" class="mdl-button mdl-js-button mdl-js-ripple-effect" id="submit">
                 Submit
               </button>
-              <button hidden="mdl-button mdl-js-button" id="submit" disabled>
+                        <button hidden="mdl-button mdl-js-button" id="submit" disabled>
                 Submit
               </button>
-            </div>
-            <div hidden class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box">
-            </div>
-          </div>
+                    </div>
+                    <div hidden class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box">
+                    </div>
+                </div>
         </main>
-      </div>
-    </body>
+        </div>
+</body>

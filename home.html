@@ -1,106 +1,106 @@
 <!doctype html>
 
 <head>
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-  <link rel="stylesheet" type = "text/css" href = "home.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="home.js"></script>
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <title>habitcrack</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="home.js"></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>habitcrack</title>
 </head>
 
 <body>
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
-    <div class="mdl-layout__drawer" id="sidebar">
-      <span class="mdl-layout-title">Hey, Student!</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="home.html">Home</a>
-        <a class="mdl-navigation__link" href="account.html">Account</a>
-        <a class="mdl-navigation__link" href="login.html">Logout</a>
-      </nav>
-    </div>
-    <main class="mdl-layout__content">
-      <div class="page-content">
-        <div class="mdl-grid">
-          <div hidden class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box" style="cursor:pointer" style="cursor:hand" id="add_habit" onclick="location.href = 'habits.html';">
-            Add Habit
-            <div id="p2" class="mdl-progress mdl-js-progress p1"></div>
-            <script>
-            document.querySelector('#p2').addEventListener('mdl-componentupgraded', function() {
-              this.MaterialProgress.setProgress(0);
-            });
-            </script>
-          </div>
-          <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box" id="habit_1">
-            <a id="Habit1"> What </a>
-            <div id="p1" class="mdl-progress mdl-js-progress p1"></div>
-            <div id="sdicons">
-              <button class="mdl-button mdl-js-button mdl-button--icon">
-                <i class="material-icons" onclick="location.href = 'settings.html';">settings</i>
-              </button>
-              <button class="mdl-button mdl-js-button mdl-button--icon">
-                <i class="material-icons">delete</i>
-              </button>
-            </div>
-            <script>
-            document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
-              this.MaterialProgress.setProgress(0);
-            });
-            </script>
-          </div>
-          <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box" id="habit_2">
-            <a id="Habit2"> #DurelldaGOAT </a>
-            <div id="p3" class="mdl-progress mdl-js-progress p1"></div>
-            <div id="sdicons">
-              <button class="mdl-button mdl-js-button mdl-button--icon">
-                <i class="material-icons" onclick="location.href = 'settings.html';">settings</i>
-              </button>
-              <button class="mdl-button mdl-js-button mdl-button--icon">
-                <i class="material-icons">delete</i>
-              </button>
-            </div>
-            <script>
-            document.querySelector('#p3').addEventListener('mdl-componentupgraded', function() {
-              this.MaterialProgress.setProgress(0);
-            });
-            </script>
-          </div>
-          <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box" id="habit_3">
-            <a id="Habit3"> #DurelldaGOAT </a>
-            <div id="p4" class="mdl-progress mdl-js-progress p1"></div>
-            <div id="sdicons">
-              <button class="mdl-button mdl-js-button mdl-button--icon">
-                <i class="material-icons" onclick="location.href = 'settings.html';">settings</i>
-              </button>
-              <button class="mdl-button mdl-js-button mdl-button--icon">
-                <i class="material-icons">delete</i>
-              </button>
-            </div>
-            <script>
-            document.querySelector('#p4').addEventListener('mdl-componentupgraded', function() {
-              this.MaterialProgress.setProgress(0);
-            });
-            </script>
-          </div>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+        <div class="mdl-layout__drawer" id="sidebar">
+            <span class="mdl-layout-title">Hey, Student!</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="home.html">Home</a>
+                <a class="mdl-navigation__link" href="account.html">Account</a>
+                <a class="mdl-navigation__link" href="login.html">Logout</a>
+            </nav>
         </div>
-        <button id="fab" onclick="location.href = 'habits.html';" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <div class="mdl-grid">
+                    <div hidden class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box" style="cursor:pointer" style="cursor:hand" id="add_habit" onclick="location.href = 'habits.html';">
+                        Add Habit
+                        <div id="p2" class="mdl-progress mdl-js-progress p1"></div>
+                        <script>
+                            document.querySelector('#p2').addEventListener('mdl-componentupgraded', function() {
+                                this.MaterialProgress.setProgress(0);
+                            });
+                        </script>
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box" id="habit_1">
+                        <a id="Habit1"> What </a>
+                        <div id="p1" class="mdl-progress mdl-js-progress p1"></div>
+                        <div id="sdicons">
+                            <button class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons" onclick="location.href = 'settings.html';">settings</i>
+              </button>
+                            <button class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">delete</i>
+              </button>
+                        </div>
+                        <script>
+                            document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
+                                this.MaterialProgress.setProgress(0);
+                            });
+                        </script>
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box" id="habit_2">
+                        <a id="Habit2"> #DurelldaGOAT </a>
+                        <div id="p3" class="mdl-progress mdl-js-progress p1"></div>
+                        <div id="sdicons">
+                            <button class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons" onclick="location.href = 'settings.html';">settings</i>
+              </button>
+                            <button class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">delete</i>
+              </button>
+                        </div>
+                        <script>
+                            document.querySelector('#p3').addEventListener('mdl-componentupgraded', function() {
+                                this.MaterialProgress.setProgress(0);
+                            });
+                        </script>
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box" id="habit_3">
+                        <a id="Habit3"> #DurelldaGOAT </a>
+                        <div id="p4" class="mdl-progress mdl-js-progress p1"></div>
+                        <div id="sdicons">
+                            <button class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons" onclick="location.href = 'settings.html';">settings</i>
+              </button>
+                            <button class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">delete</i>
+              </button>
+                        </div>
+                        <script>
+                            document.querySelector('#p4').addEventListener('mdl-componentupgraded', function() {
+                                this.MaterialProgress.setProgress(0);
+                            });
+                        </script>
+                    </div>
+                </div>
+                <button id="fab" onclick="location.href = 'habits.html';" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
           Add habit
         </button>
-      </div>
-    </main>
-  </div>
-  <script>
-  if (localStorage.getItem('habit1')) {
-    document.getElementById('Habit1').innerHTML = localStorage.getItem('habit1');
-  }
-  if (localStorage.getItem('habit2')) {
-    document.getElementById('Habit2').innerHTML = localStorage.getItem('habit2');
-  }
-  if (localStorage.getItem('habit3')) {
-    document.getElementById('Habit3').innerHTML = localStorage.getItem('habit3');
-  }
-  </script>
+            </div>
+        </main>
+    </div>
+    <script>
+        if (localStorage.getItem('habit1')) {
+            document.getElementById('Habit1').innerHTML = localStorage.getItem('habit1');
+        }
+        if (localStorage.getItem('habit2')) {
+            document.getElementById('Habit2').innerHTML = localStorage.getItem('habit2');
+        }
+        if (localStorage.getItem('habit3')) {
+            document.getElementById('Habit3').innerHTML = localStorage.getItem('habit3');
+        }
+    </script>
 </body>
