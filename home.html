@@ -5,6 +5,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
   <link rel="stylesheet" type = "text/css" href = "home.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="home.js"></script>
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>habitcrack</title>
@@ -32,8 +34,8 @@
             });
             </script>
           </div>
-          <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box">
-            <a id="Habit1">///</a>
+          <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box" id="habit_1">
+            <a id="Habit1"> What </a>
             <div id="p1" class="mdl-progress mdl-js-progress p1"></div>
             <div id="sdicons">
               <button class="mdl-button mdl-js-button mdl-button--icon">
@@ -49,8 +51,8 @@
             });
             </script>
           </div>
-          <div hidden class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box">
-            Add Habit
+          <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box" id="habit_2">
+            <a id="Habit2"> #DurelldaGOAT </a>
             <div id="p3" class="mdl-progress mdl-js-progress p1"></div>
             <div id="sdicons">
               <button class="mdl-button mdl-js-button mdl-button--icon">
@@ -66,8 +68,8 @@
             });
             </script>
           </div>
-          <div hidden class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box">
-            Add Habit
+          <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-phone box" id="habit_3">
+            <a id="Habit3"> #DurelldaGOAT </a>
             <div id="p4" class="mdl-progress mdl-js-progress p1"></div>
             <div id="sdicons">
               <button class="mdl-button mdl-js-button mdl-button--icon">
@@ -91,6 +93,14 @@
     </main>
   </div>
   <script>
-  document.getElementById("Habit1").innerHTML = localStorage.getItem("habit");
+  if (localStorage.getItem('habit1')) {
+    document.getElementById('Habit1').innerHTML = localStorage.getItem('habit1');
+  }
+  if (localStorage.getItem('habit2')) {
+    document.getElementById('Habit2').innerHTML = localStorage.getItem('habit2');
+  }
+  if (localStorage.getItem('habit3')) {
+    document.getElementById('Habit3').innerHTML = localStorage.getItem('habit3');
+  }
   </script>
 </body>

@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
   <link rel="stylesheet" type = "text/css" href = "habits.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="habits.js"></script>
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -197,7 +198,7 @@
                 <p><b>Reminder:</b></p>
                 <form action="#">
                   <div class="mdl-textfield mdl-js-textfield">
-                    <input class="mdl-textfield__input" type="text" id="sample1">
+                    <input class="mdl-textfield__input" type="text" id="sample1"  id="remessage" onchange="message1()">
                     <label class="mdl-textfield__label" for="sample1">Reminder message</label>
                   </div>
                 </form>
@@ -210,7 +211,7 @@
                 <p> When do you want reminders? </p>
                 <input class="mdl-slider mdl-js-slider" type="range" min="0" max="24" value="12" tabindex="0" step="1" id="partDaySlider">
               </div>
-              <button onclick="location.href = 'home.html';" class="mdl-button mdl-js-button mdl-js-ripple-effect" id="submit">
+              <button onclick="submit()" class="mdl-button mdl-js-button mdl-js-ripple-effect" id="submit">
                 Submit
               </button>
               <button hidden="mdl-button mdl-js-button" id="submit" disabled>
