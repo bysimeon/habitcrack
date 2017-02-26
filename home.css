@@ -1,44 +1,45 @@
 html {
-    font-family: "Roboto";
-    background-color: pink;
+  font-family: "Roboto";
+  background-color: pink;
 }
 
 a {
-    color: black;
+  color: black;
 }
 
 #sdicons {
-    text-align: right;
-    position: relative;
-    top: -140px;
+  text-align: right;
+  position: relative;
+  top: -140px;
 }
 
 .box {
-    background-color: white;
-    border: 1px solid black;
-    height: 10em;
-    padding: 130px 15px 15px 15px;
-    font-size: 2em;
-    text-align: center;
+  background-color: white;
+  border: 1px solid black;
+  height: 10em;
+  padding: 130px 15px 15px 15px;
+  font-size: 2em;
+  text-align: center;
+  display: none;
 }
 
 .p1 {
-    position: relative;
-    top: 80%;
-    width: auto;
-    margin: auto;
+  position: relative;
+  top: 80%;
+  width: auto;
+  margin: auto;
 }
 
 #sidebar {
-    border-right: black solid 1px;
+  border-right: black solid 1px;
 }
 
 #fab {
-    position: fixed;
-    width: 8em;
-    height: 2.3em;
-    margin-left: -1em;
-    margin-top: -1.15em;
-    right: 25px;
-    top: 95%;
+  position: fixed;
+  width: 8em;
+  height: 2.3em;
+  margin-left: -1em;
+  margin-top: -1.15em;
+  right: 25px;
+  top: 95%;
 }

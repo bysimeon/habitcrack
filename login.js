@@ -1,1 +1,5 @@
-localStorage.setItem("sethabits", 0);
+if (localStorage.getItem("sethabits")) {
+
+} else {
+  localStorage.setItem("sethabits", 0);
+}

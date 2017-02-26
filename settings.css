@@ -1,89 +1,89 @@
 html {
-    font-family: "Roboto";
-    background-color: pink;
+  font-family: "Roboto";
+  background-color: pink;
 }
 
 a {
-    color: black;
+  color: black;
 }
 
 #sidebar {
-    border-right: black solid 1px;
+  border-right: black solid 1px;
 }
 
 .box {
-    background-color: white;
-    border: 1px solid black;
-    height: auto;
-    padding: 15px 15px 15px 15px;
-    font-size: 2em;
+  background-color: white;
+  border: 1px solid black;
+  height: auto;
+  padding: 15px 15px 15px 15px;
+  font-size: 2em;
 }
 
 #list {
-    height: auto;
-    max-height: 40em;
-    width: auto;
-    overflow: auto;
+  height: auto;
+  max-height: 40em;
+  width: auto;
+  overflow: auto;
 }
 
 #item {
-    display: block;
+  display: block;
 }
 
 #tt4 {
-    position: relative;
-    top: 5px;
-    font-size: 1.3em;
+  position: relative;
+  top: 5px;
+  font-size: 1.3em;
 }
 
 #item:hover {
-    font-weight: bold;
-    cursor: pointer;
-    cursor: hand;
+  font-weight: bold;
+  cursor: pointer;
+  cursor: hand;
 }
 
 #searchbox {
-    left: 16px;
-    margin-bottom: -60px;
-    width: 95%;
+  left: 16px;
+  margin-bottom: -60px;
+  width: 95%;
 }
 
 #slider {
-    width: 40%;
+  width: 40%;
 }
 
 #goalLabel {
-    display: inline;
-    font-size: .6em;
+  display: inline;
+  font-size: .6em;
 }
 
 #settingslider {
-    width: 100%;
+  width: 100%;
 }
 
 #numDays {
-    display: inline;
+  display: inline;
 }
 
 #timeIntLabel {
-    display: inline;
-    font-size: .5em;
-    font-weight: bold;
+  display: inline;
+  font-size: .5em;
+  font-weight: bold;
 }
 
 #numHours {
-    display: inline;
-    font-size: .6em;
+  display: inline;
+  font-size: .6em;
 }
 
 #info {
-    /*color: #b0b0b0;*/
-    font-weight: lighter;
-    font-size: .5em;
+  /*color: #b0b0b0;*/
+  font-weight: lighter;
+  font-size: .5em;
 }
 
 #submit {
-    margin-top: 15px;
-    position: relative;
-    left: 41.5%;
+  margin-top: 15px;
+  position: relative;
+  left: 41.5%;
 }

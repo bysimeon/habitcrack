@@ -1,25 +1,25 @@
 html {
-    font-family: "Roboto";
-    background-color: pink;
+  font-family: "Roboto";
+  background-color: pink;
 }
 
 a {
-    color: black;
+  color: black;
 }
 
 #sidebar {
-    border-right: black solid 1px;
+  border-right: black solid 1px;
 }
 
 #settings {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .box {
-    background-color: white;
-    border: 1px solid black;
-    height: auto;
-    padding: 15px 15px 15px 15px;
-    font-size: 2em;
-    text-align: center;
+  background-color: white;
+  border: 1px solid black;
+  height: auto;
+  padding: 15px 15px 15px 15px;
+  font-size: 2em;
+  text-align: center;
 }
