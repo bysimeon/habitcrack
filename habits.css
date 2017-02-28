@@ -87,3 +87,14 @@ a {
   position: relative;
   left: 41.5%;
 }
+
+#reminderLabel {
+  font-size: .6em;
+}
+#altHabInput {
+  width: 200%;
+}
+
+#remessage {
+  width: 200%
+}

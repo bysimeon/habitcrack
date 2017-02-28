@@ -168,35 +168,32 @@
                     </div>
                     <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-phone box" id="habitbox">
                         <h4 id=habname> Bad Habit </h4>
-                        <!-- <p id="info">
-              Studies show it takes 21 days to break a bad habit. Start there, or work up to it! <br>
-            </p> -->
                         <div id="goalLabel">
-                            <b> Timeframe: </b>
-                            <div id="tt4" class="icon material-icons">info</div>
-                            <div class="mdl-tooltip mdl-tooltip--right" for="tt4">
-                                Studies show it takes <br> 21 days to break a bad habit. <br>Start there, or work up to it!
-                            </div>
-                            <p id="numDays">21 Days</p>
+                            <b> Goal: </b>   <b id="numDays">21 Days</b>
+                            <p>
+                                Studies show it takes 21 days to break a bad habit. Start there, or work up to it!
+                            </p>
                         </div>
                         <p id=settingslider>
                             <input class="mdl-slider mdl-js-slider" type="range" min="0" max="31" value="21" tabindex="0" step="1" id="goalSlider" oninput="showDaysMessage(this.value)" onchange="showDaysMessage(this.value)">
                         </p>
+                        <br>
                         <p id="info">
-                            Enter a new habit to replace your bad one. <br> You are more likely to break a bad habit if you replace it with a good one!
+                            Enter a new habit to replace your bad one.
+                            <!--<br> You are more likely to break a bad habit if you replace it with a good one!-->
                         </p>
                         <form action="#">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="althab">
+                                <input id="altHabInput" class="mdl-textfield__input" type="text" id="althab">
                                 <label class="mdl-textfield__label" for="althab">Alternative good habit</label>
                             </div>
                         </form>
                         </p>
                         <div id="reminder">
-                            <p><b>Reminder:</b></p>
+                            <p id="reminderLabel"><b>Reminder:</b></p>
                             <form action="#">
                                 <div class="mdl-textfield mdl-js-textfield">
-                                    <input class="mdl-textfield__input" type="text" id="sample1" id="remessage" onchange="message1()">
+                                    <input class="mdl-textfield__input" type="text" id="remessage" onchange="message1()">
                                     <label class="mdl-textfield__label" for="sample1">Reminder message</label>
                                 </div>
                             </form>
