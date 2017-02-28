@@ -92,11 +92,11 @@ a {
   font-size: .6em;
 }
 #altHabInput {
-  width: 180%;
+  width: 140%;
 }
 
 #remessage {
-  width:180%
+  width:140%;
 }
 
 #numHours {
@@ -105,4 +105,26 @@ a {
 
 #hourLabel {
   font-size: .6em;
+}
+
+#timeFrameLabel {
+  font-size: .6em;
+}
+
+#begin {
+  display: inline-block;
+}
+
+#end {
+  display: inline-block;
+}
+
+#beginLabel {
+  font-size: .6em;
+  display: inline-block;
+}
+
+#endLabel {
+  font-size: .6em;
+  display: inline-block;
 }

@@ -183,7 +183,7 @@
                             <!--<br> You are more likely to break a bad habit if you replace it with a good one!-->
                         </p>
                         <form action="#">
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="altHabWidth">
                                 <input id="altHabInput" class="mdl-textfield__input" type="text" id="althab">
                                 <label class="mdl-textfield__label" for="althab">Alternative good habit</label>
                             </div>
@@ -192,7 +192,7 @@
                         <div id="reminder">
                             <p id="reminderLabel"><b>Reminder:</b></p>
                             <form action="#">
-                                <div class="mdl-textfield mdl-js-textfield">
+                                <div class="mdl-textfield mdl-js-textfield" id="remessageWidth">
                                     <input class="mdl-textfield__input" type="text" id="remessage" onchange="message1()">
                                     <label class="mdl-textfield__label" for="sample1">Reminder message</label>
                                 </div>
@@ -204,9 +204,25 @@
                               <br>
                               <p id="numHours"> Every 4 Hours</p>
                               <input class="mdl-slider mdl-js-slider" type="range" min="0" max="24" value="4" tabindex="0" step="1" id="timeIntSlider" oninput="showHoursMessage(this.value)" onchange="showHoursMessage(this.value)">
+                              <br>
                             </div>
-                            <p> When do you want reminders? </p>
-                            <input class="mdl-slider mdl-js-slider" type="range" min="0" max="24" value="12" tabindex="0" step="1" id="partDaySlider">
+                            <b id="timeFrameLabel">
+                               When do you want reminders?
+                            </b>
+                            <!--<input class="mdl-slider mdl-js-slider" type="range" min="0" max="24" value="12" tabindex="0" step="1" id="partDaySlider"> !-->
+                            <br>
+                            <div id = "beginLabel"> Reminders will start at
+                              <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text" id="begin">
+                                <label class="mdl-textfield__label" for="sample1"> ie. 8:00 am</label>
+                              </div>
+                            </div>
+                            <div id="endLabel"> and will end at
+                              <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text" id="end">
+                                <label class="mdl-textfield__label" for="sample1"> ie. 9:00 pm</label>
+                              </div>
+                            </div>
                         </div>
                         <button onclick="submit()" class="mdl-button mdl-js-button mdl-js-ripple-effect" id="submit">
                 Submit
