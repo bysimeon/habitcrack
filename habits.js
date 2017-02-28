@@ -22,7 +22,7 @@ function showDaysMessage(value) {
 }
 
 function showHoursMessage(value) {
-  document.getElementById("numHours").innerHTML = value;
+  document.getElementById("numHours").innerHTML = 'Every ' + value + ' Hours';
 }
 
 function submit() {

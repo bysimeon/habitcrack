@@ -197,11 +197,14 @@
                                     <label class="mdl-textfield__label" for="sample1">Reminder message</label>
                                 </div>
                             </form>
-                            <p>
-                                How often would you like a reminder?
-                                <!-- <p id = "timeIntLabel"> Every <p id="numHours">0</p> hours </p> -->
-                                <input class="mdl-slider mdl-js-slider" type="range" min="0" max="24" value="0" tabindex="0" step="1" id="timeIntSlider" oninput="showHoursMessage(this.value)" onchange="showHoursMessage(this.value)">
-                            </p>
+                            <div id="hourLabel">
+                              <b>
+                                  How often would you like a reminder?
+                              </b>
+                              <br>
+                              <p id="numHours"> Every 4 Hours</p>
+                              <input class="mdl-slider mdl-js-slider" type="range" min="0" max="24" value="4" tabindex="0" step="1" id="timeIntSlider" oninput="showHoursMessage(this.value)" onchange="showHoursMessage(this.value)">
+                            </div>
                             <p> When do you want reminders? </p>
                             <input class="mdl-slider mdl-js-slider" type="range" min="0" max="24" value="12" tabindex="0" step="1" id="partDaySlider">
                         </div>

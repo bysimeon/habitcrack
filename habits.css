@@ -92,9 +92,17 @@ a {
   font-size: .6em;
 }
 #altHabInput {
-  width: 200%;
+  width: 180%;
 }
 
 #remessage {
-  width: 200%
+  width:180%
+}
+
+#numHours {
+  font-size: .9em;
+}
+
+#hourLabel {
+  font-size: .6em;
 }
