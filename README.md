@@ -1,5 +1,3 @@
 ### habitcrack
 
-web app eecs project
-
-faciliates the removal or replacement of undesirable habits
+a foreverunfinished project once worked on by simeon, durell, alex and diego
